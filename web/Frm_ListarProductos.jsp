@@ -14,6 +14,7 @@
         <link href="lib/fontawesome-free-5.14.0-web/css/all.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <!--Navbar de la aplicacion-->
         <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container">
@@ -70,7 +71,7 @@
                             out.print("<p style='color:red'>" + request.getParameter("mensaje") + "</p>");
                         }
                     %>
-
+                    <!--Creamos una tabla, donde por cada registro se hara una fila y en la fila pasara la informacion correspondiente-->
                     <table class="table">
                         <tr>
                             <th style="text-align: left">Código</th>
@@ -93,7 +94,7 @@
                             for (Producto registro : datos) {
 
                         %>
-
+                        <!--Aqui mostramos la informacion y los botones para la funcionalidad de los datos-->
                         <tr>
                             <%int codigo = registro.getIdProducto();%>
                             <td><%= codigo%></td>
@@ -110,6 +111,7 @@
                     </table>
 
                     <br>
+                    <!--Aqui permitimos agregar un nuevo producto-->
                     <a href="Frm_Productos.jsp?idCrearModificar=-1" class="btn btn-primary" >Agregar Nuevo Producto</a>
                 </div>
             </div>
