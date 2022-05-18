@@ -69,58 +69,58 @@
                             <label for="txtCodigo" class="control-label">Código</label>
                             <input type="number" id="txtCodigo" name="txtCodigo" value="<%=cliente.getIdCliente()%>" readonly class="form-control"/><br>
                             <%} else {%>
-                            <input type="hidden" id="txtCodigo" name="txtCodigo" value="-1"/><br>
+                            <input type="hidden" id="txtCodigo" name="txtCodigo" value="-1" required=""/><br>
                             <%}%>
                         </div>
 
                         <!-- form-group para los controles de Cedula -->
                         <div class="form-group">
                             <label for="txtCedula" class="control-label">Cedula</label>
-                            <input type="number" id="txtCedula" name="txtCedula" value="<%=cliente.getCedula()%>" class="form-control"/><br>
+                            <input type="number" id="txtCedula" name="txtCedula" value="<%=cliente.getCedula()%>" class="form-control" required/><br>
                         </div>
 
                         <!-- form-group para los controles de Nombre -->
                         <div class="form-group">
                             <label for="txtNombre" class="control-label">Nombre</label>
-                            <input type="text" id="txtNombre" name="txtNombre" value="<%=cliente.getNombre()%>" class="form-control"/><br>
+                            <input type="text" id="txtNombre" name="txtNombre" value="<%=cliente.getNombre()%>" class="form-control" required/><br>
                         </div>
 
                         <!-- form-group para los controles de Primer Apellido -->
                         <div class="form-group">
                             <label for="txtPrimerApellido" class="control-label">Primer Apellido</label>
-                            <input type="text" id="txtPrimerApellido" name="txtPrimerApellido" value="<%=cliente.getPrimerApellido()%>" class="form-control"/><br>
+                            <input type="text" id="txtPrimerApellido" name="txtPrimerApellido" value="<%=cliente.getPrimerApellido()%>" class="form-control" required/><br>
                         </div>
 
                         <!-- form-group para los controles de Segundo Apellido -->
                         <div class="form-group">
                             <label for="txtSegundoApellido" class="control-label">Segundo Apellido</label>
-                            <input type="text" id="txtSegundoApellido" name="txtSegundoApellido" value="<%=cliente.getSegundoApellido()%>" class="form-control"/><br>
+                            <input type="text" id="txtSegundoApellido" name="txtSegundoApellido" value="<%=cliente.getSegundoApellido()%>" class="form-control" required/><br>
                         </div>
 
                         <!-- form-group para los controles de Dirección -->
                         <div class="form-group">
                             <label for="txtDireccion" class="control-label">Dirección</label>
-                            <input type="txt" id="txtDireccion" name="txtDireccion" value="<%=cliente.getDireccionResidencia()%>" class="form-control"/><br>
+                            <input type="txt" id="txtDireccion" name="txtDireccion" value="<%=cliente.getDireccionResidencia()%>" class="form-control" required/><br>
                         </div>
 
 
                         <!-- form-group para los controles de Fecha -->
                         <div class="form-group">
                             <label for="txtFecha" class="control-label">Fecha Nacimiento</label>
-                            <input type="date" id="txtFecha" name="txtFecha" value="<%=cliente.getFechaNacimiento()%>" class="form-control" />
+                            <input type="date" id="txtFecha" name="txtFecha" value="<%=cliente.getFechaNacimiento()%>" class="form-control" required/>
                             <br>
                         </div>
 
                         <!-- form-group para los controles de Teléfono -->
                         <div class="form-group">
                             <label for="txtTelefono" class="control-label">Teléfono</label>
-                            <input type="number" id="txtTelefono" name="txtTelefono" value="<%=cliente.getTelefono()%>" class="form-control" placeholder="00-00-00-00"/><br>
+                            <input type="number" id="txtTelefono" name="txtTelefono" value="<%=cliente.getTelefono()%>" class="form-control" placeholder="00-00-00-00" required/><br>
                         </div>
 
                         <!-- form-group para los controles de Genero -->
                         <div class="form-group">
                             <label for="txtGenero" class="control-label">Genero</label>
-                            <input type="text" id="txtGenero" name="txtGenero" value="<%=cliente.getGenero()%>" class="form-control" />
+                            <input type="text" id="txtGenero" name="txtGenero" value="<%=cliente.getGenero()%>" class="form-control" required/>
                             <br>
                         </div>
 
